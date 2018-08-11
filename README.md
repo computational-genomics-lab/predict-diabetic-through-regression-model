@@ -12,10 +12,10 @@ LDL, HDL, Triglyceride
 
 ```python
 # using default files
-python3 main.py
+python main.py
 
 # using user provided data
-python3 main.py -input=[file path]
+python main.py -model MODEL -test TEST -output OUTPUT
 ```
 
 
