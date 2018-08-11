@@ -4,7 +4,7 @@ from sklearn.preprocessing import Imputer
 from sklearn.linear_model import LogisticRegression
 
 
-def predict_diabetic(model, input_data):
+def predict_diabetic(model, test_data):
 
     train_df = pd.read_csv(model)
     logistic_model = LogisticRegression()
@@ -18,7 +18,7 @@ def predict_diabetic(model, input_data):
     imp = Imputer(missing_values='NaN', strategy='mean', axis=0)
     imp.fit(features)
 
-    test_df = pd.read_csv(input_data)
+    test_df = pd.read_csv(test_data)
     logistic_model.fit(features, labels)
 
     predictions = logistic_model.predict(imp.transform(test_df[columns].values))
