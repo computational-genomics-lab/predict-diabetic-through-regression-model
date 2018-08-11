@@ -6,7 +6,6 @@ default_model = "Data/model.csv"
 default_test_data = "Data/test_dataset.csv"
 default_output = "predicted_result.csv"
 
-
 parser = argparse.ArgumentParser()
 parser.add_argument("-model", "-m", help="model filename (csv file required)", default=default_model)
 parser.add_argument("-input", "-u", help="unknown filename (csv file required)", default=default_test_data)
