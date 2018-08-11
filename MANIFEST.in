@@ -1,1 +1,2 @@
-include genbankpy/packageData/test.gbff
+include Data/model.csv
+include Data/test_dataset.csv
