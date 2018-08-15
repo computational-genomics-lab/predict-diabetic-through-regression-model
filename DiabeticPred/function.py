@@ -13,7 +13,7 @@ def predict_diabetic(model, test_data):
     labels = train_df["Outcome"].values
     features = train_df[list(columns)].values
     kfold = StratifiedKFold(n_splits=10,random_state=0)
-    logistic_model_score = cross_val_score(logistic_model, features, labels, cv=kfold, n_jobs=-1).mean()
+    logistic_model_score = cross_val_score(logistic_model, features, labels, cv=kfold).mean()
     print("{0} -> Current Model Accuracy: {1})".format(columns, logistic_model_score))
     imp = Imputer(missing_values='NaN', strategy='mean', axis=0)
     imp.fit(features)
