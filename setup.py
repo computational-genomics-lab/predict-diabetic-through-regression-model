@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='DiabeticPredict',
+    name='DiabeticPred',
     version='0.1',
     packages=find_packages(exclude=['Data*']),
     license='MIT',

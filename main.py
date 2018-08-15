@@ -1,4 +1,4 @@
-from DiabeticPredict import function
+from DiabeticPred import function
 import argparse
 
 
